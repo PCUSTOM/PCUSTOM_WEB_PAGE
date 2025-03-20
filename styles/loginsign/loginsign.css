@@ -1,0 +1,136 @@
+/*EN ESTA HOJA DE ESTILOS ESTÁN ESTILIZADOS LOS ESTILOS DE LA PÁGINA DE LOGIN Y DE LA DE SIGN
+UP, YA QUE AMBOS VAN A UTILIZAR EL MISMO FORMULARIO*/
+
+
+/*A PARTIR DE ESTA LÍNEA SE ENCUENTRAN LOS ESTILOS EXTRAIDOS DE UN FRAMEWORK DE UIVERSE.IO*/ 
+
+.form-container {
+    width: 320px;
+    border-radius: 0.75rem;
+    background: linear-gradient(90deg, #7456C1,#F8991D);
+    padding: 2rem;
+    color: black;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.form {
+    margin-top: 1.5rem;
+}
+
+.input-group {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.input-group label {
+    display: block;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border:none;
+    outline: 0;
+    background-color: white;
+    padding: 0.75rem 1rem;
+    color: black;
+}
+
+.input-group input:focus {
+    border: none;
+}
+
+
+.signup a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sign {
+    display: block;
+    width: 100%;
+    background-color: black;
+    padding: 0.75rem;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+}
+
+.sign:hover{
+    cursor: pointer;
+}
+
+.social-message {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.line {
+    height: 1px;
+    flex: 1 1 0%;
+    background-color: black;
+}
+
+.social-message .message {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons .icon {
+    border-radius: 0.125rem;
+    padding: 0.75rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+}
+
+.social-icons .icon svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    fill: black;
+}
+
+.social-icons .icon:hover{
+    cursor: pointer;
+}
+
+.signup {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: black;
+}
+
+
+/*ESTILOS PRÓPIOS HECHOS EN LA FASE ANTERIOR*/
+.volver-al-inicio{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.volver-al-inicio a{
+    text-decoration: none;
+    color: black;
+}

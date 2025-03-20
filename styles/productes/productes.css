@@ -1,0 +1,577 @@
+.separador-filtros{
+    width: 70%;
+    margin-left: 12em;
+
+    border-color: #7456C1;
+    opacity: 70%;
+}
+
+
+
+/*ESTILO DE LOS FILTROS QUE SE PUEDEN APLICAR EN LA PÁGINA*/
+#filtros{
+    height: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.filtro{
+    padding: 5%;
+}
+
+/*EL SIGUIENTE ESTILO ESTILIZA EL COLOR QUE VA A TENER EL CHEK DE LOS FILTROS*/
+input[type="checkbox"]:checked {
+    accent-color: orangered;
+}
+
+
+#productos-destacados{
+    display: flex;
+    justify-content: center;
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+#rams-destacadas{
+    display: flex;
+    justify-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+#productos-relevantes{
+    display: flex;
+    justify-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+#baratos{
+    display: flex;
+    justify-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+#caros{
+    display: flex;
+    justify-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+#novedades{
+    display: flex;
+    justify-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.productos-1{
+    width: auto;
+    height: 25rem;
+    margin: 12px 12px;
+    display: flex;
+    
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.productos-2{
+    max-width: 100%;
+    height: 25rem;
+    margin: 12px 12px;
+    display: flex;
+    
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.producto{
+    margin: 8px 8px;
+    padding: 18px 18px;
+    width: 250px;
+    height: 350px;
+
+    
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+
+/*ESTILO DE LAS IMAGENES DE LOS PRODUCTOS DENTRO DE LAS TARJETAS*/
+
+.imagen-del-producto{
+    text-align: center;
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+    
+}
+
+
+/*ESTILO DE LA INFORMACIÓN DE LOS PRODUCTOS DENTRO DE LAS TARJETAS*/
+
+.informacion-del-producto{
+    padding: 10px 10px;
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+
+/*ESTILO DEL PRECIO DE LOS PRODUCTOS DENTRO DE LAS TARJETAS*/
+
+.precio-del-producto{
+    font-weight: bold;
+    color: rgb(209, 0, 0);
+}
+
+
+/*ESTILO DE LOS ENLACES DEL PRODUCTO*/
+
+.enlace-del-producto-en-general{
+    text-decoration: none;
+    color: black;
+}
+
+.enlace-a-la-pagina-del-producto{
+    color: orangered;
+}
+
+
+/*ESTILO DEL/LOS ANUNCIOS DE LA PÁGINA*/
+
+#contenedor-del-anuncio{
+    height: 35rem;
+    align-content: center;
+    box-shadow: 0 -10px 15px -5px rgba(0, 0, 0, 0.5), 0 10px 15px -5px rgba(0, 0, 0, 0.5);
+
+
+
+    /*OPCIONES PARA AÑADIR EL COLOR CORPORATIVO DE LA EMPRESA EN EL CONTENEDOR DEL ANUNCIO*/
+    /*
+    background: linear-gradient(90deg, rgba(116, 86, 193, 0.8), rgba(248, 153, 29, 0.8));
+    */
+    
+    background: linear-gradient(90deg, #7456C1,#F8991D);
+    
+
+    
+    /*BORDE SÓLIDO DE CUATRO PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 4px;
+    */
+}
+
+.anuncio-uno{
+    max-width: 100%;
+    height: 25rem;
+    padding: 20px 20px;
+    margin: 40px 40px;
+
+    background-image: url('../../images/Anuncios/569b487a058dd1dec493538dcecfd968.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    /*BORDE SÓLIDO DE CUATRO PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 4px;
+    */
+}
+
+
+
+/*EN LA SIGUIENTE SECCIÓN DE LA HOJA DE ESTILOS ESTÁN LOS ESTILOS EN FORMATO RESPONSIVE*/
+@media screen and (min-width:375px) and (max-width:412px){
+    .separador-filtros{
+        width: 70%;
+        margin-left: 15%;
+    
+        border-color: #7456C1;
+        opacity: 70%;
+    }
+    
+    
+    
+    /*ESTILO DE LOS FILTROS QUE SE PUEDEN APLICAR EN LA PÁGINA*/
+    #filtros{
+        height: 2.5rem;
+    }
+    
+    .filtro{
+        padding: 7px;
+
+        font-size: small;
+    }
+
+    #productos-destacados{
+        width: 23.2rem;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+    
+    #rams-destacadas{
+        width: 22rem;
+        height: auto;
+        justify-content: center;
+    }
+
+    #rams-destacadas img{
+        width: 50%;
+    }
+
+    #rams-destacadas .productos-1{
+        display: block;
+        margin-left: 15%;
+    }
+
+    #rams-destacadas .productos-2{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    #productos-relevantes{
+        width: 22rem;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+    
+    #baratos{
+        width: 22rem;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+    
+    #caros{
+        width: 22rem;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+    
+    #novedades{
+        width: 22rem;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+
+    .productos-1{
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+
+    .productos-2{
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+    
+    .producto{
+        margin: 10px 10px;
+        padding: 5px 5px;
+        width: auto;
+        height: auto;
+        font-size: small;
+    }
+    
+    .imagen-del-producto img{
+        width: 75%;
+    }
+
+    #contenedor-del-anuncio{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .anuncio-uno{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+
+
+
+@media screen and (min-width:412px) and (max-width:450px){
+    .separador-filtros{
+        width: 70%;
+        margin-left: 15%;
+    
+        border-color: #7456C1;
+        opacity: 70%;
+    }
+    
+    
+    
+    /*ESTILO DE LOS FILTROS QUE SE PUEDEN APLICAR EN LA PÁGINA*/
+    #filtros{
+        height: 5rem;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .filtro{
+        padding: 11.6px;
+
+        font-size: smaller;
+    }
+
+    
+    #productos-destacados{
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+    
+    #rams-destacadas{
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+
+
+    #rams-destacadas .productos-1{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    #rams-destacadas .productos-2{
+        visibility: visible;
+        position: initial;
+        display: block;
+    }
+
+    #rams-destacadas .producto{
+        margin: 10px 10px;
+        padding: 5px 5px;
+        width: 90%;
+        height: auto;
+        font-size: small;
+    }
+
+    #rams-destacadas img{
+        width: 38%;
+    }
+
+    #productos-relevantes{
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+    
+    #baratos{
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+    
+    #caros{
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+    
+    #novedades{
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+
+    .productos-1{
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+
+    .productos-2{
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+    
+    .producto{
+        margin: 10px 10px;
+        padding: 5px 5px;
+        width: 100%;
+        height: auto;
+        font-size: small;
+    }
+    
+    .imagen-del-producto img{
+        width: 75%;
+    }
+
+
+    #contenedor-del-anuncio{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .anuncio-uno{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:850px){
+    .separador-filtros{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    /*ESTILO DE LOS FILTROS QUE SE PUEDEN APLICAR EN LA PÁGINA*/
+    #filtros{
+        height: 6rem;
+    }
+    
+    .filtro{
+        padding: 50px;
+        font-size: 85%;
+    }
+
+
+
+    #productos-destacados{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    #rams-destacadas{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #rams-destacadas img{
+        width: 50%;
+    }
+
+    #rams-destacadas .productos-1{
+        display: flex;
+        margin-left: 0%;
+    }
+
+    #rams-destacadas .productos-2{
+        visibility: visible;
+        position: initial;
+    }
+    
+    #productos-relevantes{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    #baratos{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    #caros{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    #novedades{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .productos-1{
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+
+    .productos-2{
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+    
+    .producto{
+        margin: 15px 15px;
+        padding: 10px 10px;
+        width: 100%;
+        height: auto;
+        font-size: 85%;
+    }
+    
+    .imagen-del-producto img{
+        width: 50%;
+    }
+
+    #contenedor-del-anuncio{
+        height: 20rem;
+        visibility: visible;
+        position: initial;
+    }
+    
+    .anuncio-uno{
+        height: 10rem;
+        background-size:auto;
+        background-position: center;
+        visibility: visible;
+        position: initial;
+    }
+}

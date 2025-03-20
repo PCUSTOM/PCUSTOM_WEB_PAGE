@@ -1,0 +1,132 @@
+#container-componentes{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.linea{
+    display: flex;
+    justify-content: center;
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.linea-2{
+    display: flex;
+    justify-content: center;
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.titulo-e-imagen-del-servicio{
+    padding: 3%;
+}
+
+.titulo-e-imagen-del-servicio img{
+    width: 10rem;
+    filter: brightness(1.1);
+}
+
+
+
+.link-als-components{
+    text-decoration: none;
+    color: orangered;
+}
+
+
+
+/*EN LA SIGUIENTE SECCIÓN DE LA HOJA DE ESTILOS ESTÁN LOS ESTILOS EN FORMATO RESPONSIVE*/
+
+@media screen and (min-width:375px) and (max-width:412px){
+    .linea{
+        display:inline;
+    }
+
+    .linea-2{
+        display:inline;
+    }
+    
+    .titulo-e-imagen-del-servicio{
+        padding: 0.50%;
+    }
+    
+    .titulo-e-imagen-del-servicio img{
+        width: 15rem;
+    }
+    
+    
+    
+    .link-als-components{
+        text-decoration: none;
+        color: orangered;
+    }
+}
+
+
+@media screen and (min-width:412px) and (max-width:450px){
+
+    .linea{
+        display:inline;
+    }
+
+    .linea-2{
+        display:inline;
+    }
+    
+    .titulo-e-imagen-del-servicio{
+        padding: 0.50%;
+    }
+    
+    .titulo-e-imagen-del-servicio img{
+        width: 15rem;
+    }
+    
+    
+    
+    .link-als-components{
+        text-decoration: none;
+        color: orangered;
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:850px){
+
+    .linea{
+        width: 20rem;
+        display: inline-block;
+    }
+
+    .linea-2{
+        display: flex;
+    }
+    
+    .titulo-e-imagen-del-servicio{
+        padding: 5%;
+    }
+    
+    .titulo-e-imagen-del-servicio img{
+        width: 15rem;
+    }
+    
+    .link-als-components{
+        text-decoration: none;
+        color: orangered;
+    }
+}

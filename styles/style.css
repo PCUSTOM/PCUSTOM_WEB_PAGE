@@ -1,0 +1,598 @@
+/*EN ESTA HOJA DE ESTILOS CSS SE HAYAN LOS ESTILOS GENERALES QUE INFLUYEN EN TODAS O EN LA
+GRAN MAYORÍA DE LA PÁGINAS DE ESTA WEB. DE ESTA FORMA ES MÁS FÁCIL EDITAR E IDENTIFICAR
+LOS VALORES.*/
+
+
+/*TODA LA PÁGINA*/
+*{
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*BODY*/
+/*
+body{
+    background: linear-gradient(90deg, #7456C1,#F8991D);
+}
+*/
+
+#logo-titulo-de-la-pagina{
+    text-align: center;
+    align-content: center;
+}
+
+#logo-titulo-de-la-pagina img{
+    width: 40rem;
+}
+
+/*HEADER*/
+header{
+    margin-top: 1.2rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+/*CONTENEDORES DEL HEADER*/
+/*EN ESTOS CONTENEDORES SE ESPECIFICAN LOS VALORES QUE TIENEN QUE SEGUIR*/
+.contenedor-izquierdo{
+    width: 35%;
+    align-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.contenedor-central{
+    width: 35%;
+    align-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.contenedor-derecho{
+    width: 35%;
+    align-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+
+/*ESTILO DEL MENÚ DE NAVEGACIÓN (SELECTOR DE PÁGINAS)*/
+/*
+    #menu-de-navegacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+        /*
+        border: solid 2px;
+        
+    }
+*/
+
+#navegacion-entre-paginas{
+    text-align: left;
+    margin-left: 2rem;
+}
+
+#paginas-de-navegacion{
+    /*AQUÍ SE LE DA UNA MEDIDA APROPIADA PARA QUE LA IMAGEN DE FONDO PUEDA OCUPARLO*/
+    height: 2.3rem;
+
+    /*AQUÍ SE LE QUITA TODA LA DECORACIÓN Y DEMÁS AL SELECT PARA QUE PAREZCA UN BOTÓN DE
+    DESPLEGABLE NORMAL*/
+    border: none;
+    appearance: none;
+    background-color: transparent;
+    list-style: none;
+    
+    /*Y EN ESTA PARTE SE AÑADE LA IMAGEN Y SE LE DAN UN PAR DE RETOQUES PARA QUE ESTÉ BIEN
+    CENTRADA LA IMAGEN Y PUEDA CUBRIR TODO EL RECUADRO DEL SELECT*/
+    background-image: url('../images/Iconos/three-bars.svg');
+    background-size: 46px 46px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*ESTILO DE LA BARRA DE NAVEGACIÓN*/
+#kit-barra-de-navegacion{
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+#kit-barra-de-navegacion img{
+    width: 13%;
+}
+
+#barra-de-navegacion{
+    height: 3rem;
+}
+
+
+/*ESTILO DEL MENÚ DESPLEGABLE DEL USUARIO*/
+#perfil-y-utilidades-del-usuario{
+    text-align: right;
+    margin-right: 2rem;
+}
+
+#opciones-y-utilidades-del-usuario{
+    /*AQUÍ SE LE DA UNA MEDIDA APROPIADA PARA QUE LA IMAGEN DE FONDO PUEDA OCUPARLO*/
+    height: 2.3rem;
+
+    /*AQUÍ SE LE QUITA TODA LA DECORACIÓN Y DEMÁS AL SELECT PARA QUE PAREZCA UN BOTÓN DE
+    DESPLEGABLE NORMAL*/
+    border: none;
+    appearance: none;
+    background-color: transparent;
+    list-style: none;
+    
+    /*Y EN ESTA PARTE SE AÑADE LA IMAGEN Y SE LE DAN UN PAR DE RETOQUES PARA QUE ESTÉ BIEN
+    CENTRADA LA IMAGEN Y PUEDA CUBRIR TODO EL RECUADRO DEL SELECT*/
+    background-image: url('../images/Iconos/profile+user+icon-1320086081145096981_0px.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+select:hover{
+    cursor: pointer;
+}
+
+hr{
+    width: 100%;
+    border: solid 1.5px;
+    border-color: #CCCCCC;
+}
+
+
+/*EN ESTA PARTE DE LA HOJA DE ESTILOS SE DEFINE EL ESTILO PERTENECIENTE A LA RUTA DEL USUARIO*/
+.ruta-del-usuario{
+    margin: 1em;
+    color: #000000;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.ruta-del-usuario li{
+    padding: 5px;
+    align-content: center;
+}
+
+.link-a-una-de-las-paginas-de-la-ruta-del-usuario{
+    text-decoration: none;
+    font-size: small;
+}
+
+.titulo{
+    margin: 2em;
+}
+
+/*FOOTER DE ESTILO ÚNICO GENERALIZADO*/
+footer{
+    text-align: center;
+
+    /*FONDO CON LOS COLORES CORPORATIVOS DE LA EMPRESA CON NIVEL DE TRANSPARÉNCIA*/
+    /*ESTA LÍNEA ESTÁ COMENTADA PORQUE AÚN ES UNA DECISIÓN A TOMAR*/
+    /*
+    background: linear-gradient(90deg, rgba(116, 86, 193, 0.8), rgba(248, 153, 29, 0.8));
+    */
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+
+/*CONTENIDO CON INFORMACIÓN ESCRITA DEL FOOTER*/
+/*
+    #contenido-informativo{
+        /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+        /*
+        border: solid 2px;
+        
+    }
+*/
+.seccion-sobre-nosotros{
+    display: flex;
+    justify-content: center;
+}
+
+.seccion-sobre-terminos-legales{
+    display: flex;
+    justify-content: center;
+}
+
+footer li{
+    list-style: none;
+    padding: 10px;
+}
+
+footer li a{
+    text-decoration: none;
+    color: orangered;
+}
+
+/*ICONOS ENLAZANTES CON LAS REDES SOCIALES DE LA EMPRESA*/
+#enlace-a-las-redes-sociales{
+    display: flex;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+#enlace-a-las-redes-sociales img{
+    max-width: 5%;
+    height: auto;
+    padding: 12px;
+}
+
+
+
+
+/*AQUÍ SE DEFINEN LOS ESTILOS QUE VA A PORTAR EL BOTÓN DE 'BACK TO TOP'*/
+.boton-de-back-to-top button{
+    padding: 1em;
+
+
+    border: none;
+    border-radius: 100%;
+    background: linear-gradient(90deg, #7456C1,#F8991D);
+
+    
+
+    /*FIJAMOS LA POSICIÓN DEL BOTÓN*/
+    position: fixed;
+    bottom: 3%;
+    right: 1%;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.boton-de-back-to-top button img{
+    width: 1.2em;
+}
+
+
+
+
+/*EN LA SIGUIENTE SECCIÓN DE LA HOJA DE ESTILOS ESTÁN LOS ESTILOS EN FORMATO RESPONSIVE*/
+@media screen and (min-width:375px) and (max-width:412px){
+    
+
+    #logo-titulo-de-la-pagina img{
+        width: 20rem;
+    }
+
+    .contenedor-izquierdo{
+        width: 15%;
+    }
+
+    .contenedor-central{
+        width: 15%;
+    }
+    
+    .contenedor-derecho{
+        width: 15%;
+    }
+
+    #navegacion-entre-paginas{
+        margin-left: 0;
+    }
+    
+    #paginas-de-navegacion{
+        /*AQUÍ SE LE DA UNA MEDIDA APROPIADA PARA QUE LA IMAGEN DE FONDO PUEDA OCUPARLO*/
+        height: 1.3rem;
+    
+        background-size: 36px 36px;
+    }
+
+    /*ESTILO DE LA BARRA DE NAVEGACIÓN*/
+    #kit-barra-de-navegacion{
+        margin-left: 3rem;
+    }
+
+    #kit-barra-de-navegacion img{
+        max-width: 7.5%;
+    }
+
+    #barra-de-navegacion{
+        height: 2rem;
+    }
+
+
+    /*ESTILO DEL MENÚ DESPLEGABLE DEL USUARIO*/
+    #perfil-y-utilidades-del-usuario{
+        margin-left: 12rem;        
+    }
+
+    #opciones-y-utilidades-del-usuario{
+        /*AQUÍ SE LE DA UNA MEDIDA APROPIADA PARA QUE LA IMAGEN DE FONDO PUEDA OCUPARLO*/
+        width: 4.8rem;
+        height: 2.3rem;
+    }
+
+    .titulo{
+        margin-top: -0.5em;
+        font-size: small;
+    }
+
+
+    /*FOOTER*/
+    .seccion-sobre-nosotros{
+        font-size: small;
+    }
+    
+    .seccion-sobre-terminos-legales{
+        font-size: small;
+        align-items: center;
+    }
+    
+    
+    #enlace-a-las-redes-sociales img{
+        max-width: 8%;
+        height: auto;
+        padding: 8px;
+    }
+    
+
+    /*AQUÍ SE DEFINEN LOS ESTILOS QUE VA A PORTAR EL BOTÓN DE 'BACK TO TOP'*/
+    .boton-de-back-to-top{
+        display: none;
+        left: 0;
+        margin: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+    .boton-de-back-to-top button{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .boton-de-back-to-top button img{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+
+
+@media screen and (min-width:412px) and (max-width:450px){
+
+    #logo-titulo-de-la-pagina img{
+        width: 22.5rem;
+    }
+
+    .contenedor-izquierdo{
+        width: 16%;
+    }
+
+    .contenedor-central{
+        width: 16%;
+    }
+    
+    .contenedor-derecho{
+        width: 16%;
+    }
+
+    #navegacion-entre-paginas{
+        margin-left: 0;
+    }
+    
+    #paginas-de-navegacion{
+        /*AQUÍ SE LE DA UNA MEDIDA APROPIADA PARA QUE LA IMAGEN DE FONDO PUEDA OCUPARLO*/
+        height: 1.3rem;
+    
+        background-size: 36px 36px;
+    }
+
+    /*ESTILO DE LA BARRA DE NAVEGACIÓN*/
+    #kit-barra-de-navegacion{
+        margin-left: 3rem;
+    }
+
+    #kit-barra-de-navegacion img{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    #barra-de-navegacion{
+        height: 2rem;
+    }
+
+
+    /*ESTILO DEL MENÚ DESPLEGABLE DEL USUARIO*/
+    #perfil-y-utilidades-del-usuario{
+        margin-left: 12rem;      
+    }
+
+    #opciones-y-utilidades-del-usuario{
+        /*AQUÍ SE LE DA UNA MEDIDA APROPIADA PARA QUE LA IMAGEN DE FONDO PUEDA OCUPARLO*/
+        width: 4.8rem;
+        height: 2.3rem;
+
+        background-size: 90px 90px;
+    }
+
+    .titulo{
+        margin-top: -0.5em;
+        font-size: small;
+    }
+
+
+    /*FOOTER*/
+    .seccion-sobre-nosotros{
+        font-size: small;
+    }
+    
+    .seccion-sobre-terminos-legales{
+        font-size: small;
+    }
+    
+    
+    #enlace-a-las-redes-sociales img{
+        max-width: 8%;
+        height: auto;
+        padding: 8px;
+    }
+
+    /*AQUÍ SE DEFINEN LOS ESTILOS QUE VA A PORTAR EL BOTÓN DE 'BACK TO TOP'*/
+    .boton-de-back-to-top{
+        display: none;
+        left: 0;
+        margin: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .boton-de-back-to-top button{
+
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .boton-de-back-to-top button img{
+        visibility: none;
+        position: absolute;
+    }
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:850px){
+    
+
+    #logo-titulo-de-la-pagina img{
+        width: 40rem;
+    }
+
+    .contenedor-izquierdo{
+        width: 30%;
+        text-align: left;
+    }
+
+    .contenedor-central{
+        width: 35%;
+    }
+    
+    .contenedor-derecho{
+        width: 30%;
+    }
+
+    #navegacion-entre-paginas{
+        margin-left: 0;
+    }
+    
+    #paginas-de-navegacion{
+        /*AQUÍ SE LE DA UNA MEDIDA APROPIADA PARA QUE LA IMAGEN DE FONDO PUEDA OCUPARLO*/
+        height: 2.5rem;
+    
+        background-size: 48px 48px;
+    }
+
+    /*ESTILO DE LA BARRA DE NAVEGACIÓN*/
+    #kit-barra-de-navegacion{
+        margin-left: 1.5%;
+    }
+
+    #kit-barra-de-navegacion img{
+        width: 42px;
+    }
+
+    #barra-de-navegacion{
+        width: 20rem;
+        height: 2.5rem;
+    }
+
+
+    /*ESTILO DEL MENÚ DESPLEGABLE DEL USUARIO*/
+    #perfil-y-utilidades-del-usuario{
+        margin-left: 10rem;        
+    }
+
+    #opciones-y-utilidades-del-usuario{
+        /*AQUÍ SE LE DA UNA MEDIDA APROPIADA PARA QUE LA IMAGEN DE FONDO PUEDA OCUPARLO*/
+        width: 6rem;
+        height: 2.3rem;
+    }
+
+    .titulo{
+        margin-top: -0.5em;
+        font-size: small;
+    }
+
+
+    /*FOOTER*/
+    footer{
+        font-size: 90%;
+    }
+
+    #enlace-a-las-redes-sociales img{
+        max-width: 5%;
+        height: auto;
+        padding: 10px;
+    }
+    
+
+    /*AQUÍ SE DEFINEN LOS ESTILOS QUE VA A PORTAR EL BOTÓN DE 'BACK TO TOP'*/
+    .boton-de-back-to-top{
+        display: none;
+        left: 0;
+        margin: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+    .boton-de-back-to-top button{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .boton-de-back-to-top button img{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+
+
+@media screen and (min-width:1280px) and (max-width:1680px){
+    /*ESTILO DE LA BARRA DE NAVEGACIÓN*/
+    #kit-barra-de-navegacion{
+        margin-left: 5%;
+    }
+
+    #kit-barra-de-navegacion img{
+        width: 50px;
+    }
+
+    #barra-de-navegacion{
+        width: 25rem;
+        height: 3rem;
+    }
+
+
+
+    #enlace-a-las-redes-sociales{
+        justify-content: center;
+    }
+}

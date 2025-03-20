@@ -1,0 +1,477 @@
+#container{
+    width: 50%;
+    text-align: center;
+    align-content: center;
+    margin-left: 25%;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.linea{
+    display: flex;
+    justify-content: center;
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.titulo-e-imagen-del-servicio{
+    padding: 8%;
+}
+
+.titulo-e-imagen-del-servicio img{
+    width: 15rem;
+}
+
+
+
+.link-al-servei{
+    text-decoration: none;
+    color: orangered;
+}
+
+@media screen and (min-width:375px) and (max-width:412px){
+    #container{
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .linea{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .titulo-e-imagen-del-servicio{
+        padding: 0%;
+        font-size: small;
+    }
+    
+    .titulo-e-imagen-del-servicio img{
+        width: 10rem;
+    }
+}
+
+@media screen and (min-width:412px) and (max-width:450px){
+    #container{
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .linea{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .titulo-e-imagen-del-servicio{
+        padding: 0%;
+        font-size: small;
+    }
+    
+    .titulo-e-imagen-del-servicio img{
+        width: 10rem;
+    }
+}
+
+
+
+
+/*LOS SIGUIENTES ESTILOS ESTILIZAN EL ASPECTO QUE VA A TENER CADA SUBPÁGINA DEL APARTADO DE
+SERVICIOS Y LA PÁGINA DE 'SOBRE NOSALTRES'. PONIENDOLOS EN ESTA HOJA ME ASEGURO DE QUE LAS
+SUBPÁGINAS DE SERVICIO RECOJAN BIEN LOS ESTILOS QUE LES PERTENECEN*/
+
+
+#carousel{
+    height: 35rem;
+    background: linear-gradient(90deg, #7456C1,#F8991D);
+    text-align: center;
+    align-content: center;
+
+    /*BORDE SÓLIDO DE CUATRO PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    border: solid 4px;
+}    
+
+
+/*LOS ESTILOS QUE COBRARÁ LA INFORMACIÓN*/
+.informacion{
+    margin: 3em 3em;
+}
+
+
+/*EN LOS SIGUIENTES ESTILOS PERTENECEN A LA SECCIÓN DE "CUALIDADES DEL SERVICIO*/
+
+.gama-de-cualidades{
+    height: 15rem;
+
+    /*DESPUÉS DE HABERLE ASIGNADO UNA ALTURA ADECUADA, HACEMOS QUE LOS ELEMENTOS SE ALINEEN
+    HORIZONTALMENTE, VERTICALMENTE Y QUE ESTÉN CENTRADOS*/
+    display: flex;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.cualidad{
+    /*LA ANCHURA QUE TIENE SE DEBE A LA ANCHURA DEL CONTENEDOR PRINCIPLA (gama-de-cualidades)
+    DIVIDIDA ENTRE TRES, ASÍ, DE ESTA FORMA CADA CONTENEDOR TIENE UNA ANCURA ADECUADA.´*/
+    width: 432px;
+
+    
+    /*TAMBIÉN LE VAMOS A DECIR QUE LA LETRA SE HAGA UN POCO MÁS GRANDE*/
+    font-size: large;
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.contenedor-de-la-imagen{
+    /*COMO NECESITABA UN POCO DE ESPACIO PARA LA IMAGEN, LE HE ASIGNADO LAS SIGUIENTES MEDIDAS
+    AL CONTENEDOR*/
+    width: 10rem;
+    height: 10rem;
+
+    /*COMO NO DEJA CENTRARLO HORIZONTALMENTE PERO SI VERTICALMENTE, LO CENTRO VERTICALMENTE
+    Y LE PONGO UN MARGEN DEL 31% RESPECTO EL CONTENEDOR DE (cualidad).*/
+    margin-left: 31%;
+    align-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+
+    /*PARA HACER LA IMAGEN MÁS LLAMATIVA LE HE AÑADIDO UNOS BORDES TOTALMENTE REDONDOS Y EL
+    COLOR CORPORATIVO DE LA EMPRESA DE FONDO.*/
+    border-radius: 100%;
+    background: linear-gradient(90deg, #7456C1,#F8991D);
+}
+.img-representativa-de-la-cualidad{
+    /*AL SER IMÁGENES PEQUEÑAS, SE NECESITA QUE SE AGRANDEN UN POCO*/
+    width: 5rem;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+@media screen and (min-width:375px) and (max-width:412px){
+    #carousel{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    /*LOS ESTILOS QUE COBRARÁ LA INFORMACIÓN*/
+    .informacion{
+        margin: 1.5em 1.5em;
+    }
+    
+    
+    /*EN LOS SIGUIENTES ESTILOS PERTENECEN A LA SECCIÓN DE "CUALIDADES DEL SERVICIO*/
+    
+    .gama-de-cualidades{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .cualidad{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .contenedor-de-la-imagen{
+        visibility: hidden;
+        position: absolute;
+    }
+    .img-representativa-de-la-cualidad{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:412px) and (max-width:450px){
+    #carousel{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    /*LOS ESTILOS QUE COBRARÁ LA INFORMACIÓN*/
+    .informacion{
+        margin: 1.5em 1.5em;
+    }
+    
+    
+    
+    /*EN LOS SIGUIENTES ESTILOS PERTENECEN A LA SECCIÓN DE "CUALIDADES DEL SERVICIO*/
+    
+    .gama-de-cualidades{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .cualidad{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .contenedor-de-la-imagen{
+        visibility: hidden;
+        position: absolute;
+    }
+    .img-representativa-de-la-cualidad{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:850px){
+    #carousel{
+        height: 25rem;
+    }
+    
+    .contenedor-de-la-imagen{
+        margin-left: 25%;
+    }
+
+}
+
+
+
+
+
+
+/*ESTILO DE 'SOBRE NOSALTRES'*/
+#ubiacion-en-el-mapa{
+    text-align: center;
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.mapa{
+    border-radius: 10%;
+    border: solid;
+}
+
+.gama-de-marcas{
+    height: 15rem;
+
+    /*DESPUÉS DE HABERLE ASIGNADO UNA ALTURA ADECUADA, HACEMOS QUE LOS ELEMENTOS SE ALINEEN
+    HORIZONTALMENTE, VERTICALMENTE Y QUE ESTÉN CENTRADOS*/
+    display: flex;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.marca{
+    /*LA ANCHURA QUE TIENE SE DEBE A LA ANCHURA DEL CONTENEDOR PRINCIPLA (gama-de-cualidades)
+    DIVIDIDA ENTRE TRES, ASÍ, DE ESTA FORMA CADA CONTENEDOR TIENE UNA ANCURA ADECUADA.´*/
+    width: 432px;
+
+    
+    /*TAMBIÉN LE VAMOS A DECIR QUE LA LETRA SE HAGA UN POCO MÁS GRANDE*/
+    font-size: large;
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.contenedor-de-la-imagen-marca{
+    /*COMO NECESITABA UN POCO DE ESPACIO PARA LA IMAGEN, LE HE ASIGNADO LAS SIGUIENTES MEDIDAS
+    AL CONTENEDOR*/
+    width: 10rem;
+    height: 10rem;
+
+    /*COMO NO DEJA CENTRARLO HORIZONTALMENTE PERO SI VERTICALMENTE, LO CENTRO VERTICALMENTE
+    Y LE PONGO UN MARGEN DEL 31% RESPECTO EL CONTENEDOR DE (cualidad).*/
+    margin-left: 31%;
+    align-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+
+    /*PARA HACER LA IMAGEN MÁS LLAMATIVA LE HE AÑADIDO UNOS BORDES TOTALMENTE REDONDOS Y EL
+    COLOR CORPORATIVO DE LA EMPRESA DE FONDO.*/
+    border-radius: 100%;
+    background: linear-gradient(90deg, #7456C1,#F8991D);
+}
+
+.contenedor-de-la-imagen-marca-2{
+    /*COMO NECESITABA UN POCO DE ESPACIO PARA LA IMAGEN, LE HE ASIGNADO LAS SIGUIENTES MEDIDAS
+    AL CONTENEDOR*/
+    width: 10rem;
+    height: 10rem;
+
+    /*COMO NO DEJA CENTRARLO HORIZONTALMENTE PERO SI VERTICALMENTE, LO CENTRO VERTICALMENTE
+    Y LE PONGO UN MARGEN DEL 31% RESPECTO EL CONTENEDOR DE (cualidad).*/
+    margin-left: 31%;
+    align-content: center;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+
+    /*PARA HACER LA IMAGEN MÁS LLAMATIVA LE HE AÑADIDO UNOS BORDES TOTALMENTE REDONDOS Y EL
+    COLOR CORPORATIVO DE LA EMPRESA DE FONDO.*/
+    border-radius: 100%;
+    background: linear-gradient(90deg, #7456C1,#F8991D);
+}
+
+.img-de-la-marca{
+    /*AL SER IMÁGENES PEQUEÑAS, SE NECESITA QUE SE AGRANDEN UN POCO*/
+    width: 5rem;
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+@media screen and (min-width:375px) and (max-width:412px){
+    /*ESTILO DE 'SOBRE NOSALTRES'*/
+    #ubiacion-en-el-mapa{
+        text-align: center;
+    }
+
+    .mapa{
+        width: 15rem;
+        height: 13.5rem;
+        border-radius: 10%;
+        border: solid;
+    }
+
+
+    .gama-de-marcas{
+        width: 22.5rem;
+        height: 5rem;
+    }
+    
+    .marca{
+        width: 25rem;
+    }
+    
+    .contenedor-de-la-imagen-marca{
+        width: 4.5rem;
+        height: 4.5rem;
+        align-content: center;
+        text-align: center;
+    }
+
+    .contenedor-de-la-imagen-marca-2{
+        width: 4.5rem;
+        height: 4.5rem;
+        align-content: center;
+        text-align: center;
+        margin-left: 38%;
+    }
+
+    .img-de-la-marca{
+        width: 2.5rem;
+    }
+}
+
+@media screen and (min-width:412px) and (max-width:450px){
+    /*ESTILO DE 'SOBRE NOSALTRES'*/
+    #ubiacion-en-el-mapa{
+        text-align: center;
+    }
+
+    .mapa{
+        width: 15rem;
+        height: 13.5rem;
+        border-radius: 10%;
+        border: solid;
+    }
+
+
+    .gama-de-marcas{
+        width: 22.5rem;
+        height: 5rem;
+    }
+    
+    .marca{
+        width: 25rem;
+    }
+    
+    .contenedor-de-la-imagen-marca{
+        width: 5rem;
+        height: 5rem;
+        align-content: center;
+        text-align: center;
+    }
+
+    .contenedor-de-la-imagen-marca-2{
+        width: 5rem;
+        height: 5rem;
+        align-content: center;
+        text-align: center;
+        margin-left: 40%;
+    }
+
+    .img-de-la-marca{
+        width: 2.5rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:850px){
+    .gama-de-marcas{
+        width: 100%;
+        height: 7rem;
+    }
+    
+    .marca{
+        width: 100%;
+    }
+    
+    .contenedor-de-la-imagen-marca{
+        width: 6rem;
+        height: 6rem;
+        align-content: center;
+        text-align: center;
+        margin-left: 25%;
+        justify-content: center;
+    }
+
+    .contenedor-de-la-imagen-marca-2{
+        width: 6rem;
+        height: 6rem;
+        align-content: center;
+        text-align: center;
+        margin-left: 38%;
+        justify-content: center;
+    }
+
+    .img-de-la-marca{
+        width: 4rem;
+    }
+}

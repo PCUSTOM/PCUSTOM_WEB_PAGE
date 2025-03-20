@@ -1,0 +1,147 @@
+.hr-manera{
+    width: 80%;
+    margin-left: 5em;
+}
+
+.producto-seleccionado{
+    display: flex;
+    margin: 20px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+
+
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+
+.contenido{
+    padding: 2.5% 2.5%;
+}
+
+
+.precio-y-cantidad-del-producto-seleccionado{
+    font-weight: bold;
+    color: rgb(209, 0, 0);
+}
+
+
+.proceder-a-pedir{
+    width: 15%;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(90deg, #7456C1,#F8991D);
+
+
+    border-radius: 10%;
+    /*HACER EL RADIO DEL BORDE TOTALMENTE REDONDO ES UNA POSIBLE DECISIÓNA TOMAR*/
+    /*
+    border-radius: 100%;
+    */
+
+    /*BORDE SÓLIDO DE DOS PÍXELES PARA MANTENER UNA VISTA DEL CONTENEDOR*/
+    /*
+    border: solid 2px;
+    */
+}
+
+.proceder-a-pedir img{
+    width: 50%;
+}
+
+@media screen and (min-width:375px) and (max-width:412px){
+    .hr-manera{
+        width: 80%;
+        margin-left: 8%;
+    }
+    
+    .producto-seleccionado{
+        display: flex;
+        margin: 10px;
+    }
+    
+    .container{
+        width: 70%;
+        font-size: x-small;
+    }
+    
+    .imagen-del-producto{
+        width: 7em;
+    }    
+    
+    
+    .proceder-a-pedir{
+        width: 25%;
+        align-content: center;
+    }
+
+    .proceder-a-pedir img{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:412px) and (max-width:450px){
+    .hr-manera{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .producto-seleccionado{
+        display: flex;
+        margin: 10px;
+    }
+    
+    .container{
+        width: 70%;
+        font-size: small;
+    }
+    
+    .imagen-del-producto{
+        width: 7em;
+    }    
+    
+    
+    .proceder-a-pedir{
+        width: 25%;
+        align-content: center;
+    }
+
+    .proceder-a-pedir img{
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:850px){
+    .hr-manera{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .container{
+        width: 75%;
+        height: 10rem;
+        font-size: initial;
+    }
+    
+    .imagen-del-producto{
+        width: initial;
+    }    
+    
+    .proceder-a-pedir{
+        width: 22%;
+        align-content: center;
+    }
+
+    .proceder-a-pedir img{
+        width: 50%;
+    }
+}
